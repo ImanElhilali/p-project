@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'https://p-project-api.onrender.com',
+      target: 'https://p-project-api.onrender.com/',
       changeOrigin: true,
     })
   )
