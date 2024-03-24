@@ -11,7 +11,7 @@ import {
 } from '../controls/agentControllers.js'
 
 router.route('/').get(protect, getAgents).post(protect, admin, addAgent)
-router.route('/paginate').get(protect, getAgentsForPagination)
+router.route('/paginate').get(getAgentsForPagination)
 router
   .route('/:id')
   .delete(protect, admin, deleteAgent)
