@@ -2,7 +2,7 @@ import { fetchBaseQuery, createApi } from '@reduxjs/toolkit/query/react'
 
 const baseQuery = fetchBaseQuery({
   // baseUrl: '',
-  baseUrl: `https://tutorial-project-api.onrender.com/`,
+  baseUrl: `https://p-project-api.onrender.com/`,
 })
 
 export const apiSlice = createApi({
