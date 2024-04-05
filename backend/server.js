@@ -24,6 +24,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 app.use(cors({ origin: 'https://p-project.onrender.com', credentials: true }))
+app.set('trust proxy', 1)
 
 app.use('/api/companies', companyRoutes)
 app.use('/api/locals', localRoutes)
