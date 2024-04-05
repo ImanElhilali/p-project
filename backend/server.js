@@ -23,7 +23,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
-app.use(cors({ origin: true, credentials: true }))
+app.use(cors({ origin: 'https://p-project.onrender.com', credentials: true }))
 
 app.use('/api/companies', companyRoutes)
 app.use('/api/locals', localRoutes)
